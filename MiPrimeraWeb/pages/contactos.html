@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- comentario -->
+    <!-- control + / -->
+    <!-- info para los navegadores y buscadores -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Practica de html y css" />
+    <meta name="keywords" content="etiquetas,atributos,css,html" />
+    <meta name="author" content="Nahuel Rodriguez" />
+    <title>Primer web</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- barra de navegacion -->
+      <nav>
+        <a href="../Index.html">Inicio</a>
+        <a href="elementos.html">Elementos</a>
+        <a href="position.html">Position</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="contactos.html" class="paginaActual">Contacto</a>
+        <!-- shift + alt + flechita abajo -->
+        <!-- alt + flecha para mover el codigo -->
+        <!-- ../ para salir de la carpeta -->
+      </nav>
+    </header>
+    <main>
+      <div class="tituloContactos">
+        <h2>Practica de HTML Y CSS</h2>
+      </div>
+
+ 
+      <section class="contenedor">
+        <h2>Contactanos</h2>
+        <hr />
+        <div id="cajaContactos">
+
+          <form>
+            <div class="boxContactos">
+              <div class="boxNombreEmail">
+                <label for="nombreApellido">Nombre y apellido</label>
+                <input
+                  type="text"
+                  placeholder="Jorge Exequiel Lazarte / Constanza Segura"
+                  id="nombreApellido"
+                  required
+                  minlength="5"
+                  maxlength="100"
+                />
+              </div>
+              <div class="boxNombreEmail">
+                <label for="">Email</label>
+                <input
+                  type="email"
+                  required
+                  maxlength="360"
+                  placeholder="lazartej71@gmail.com"
+                />
+              </div>
+              <!--  example@gmail.com -->
+            </div>
+            <div>
+              <label for="consulta">Consulta</label>
+              <textarea
+                name=""
+                id="consulta"
+                rows="5"
+                placeholder="Trabajo Practico de HTML Y CSS // Comision N:2 // Programacion 3"
+                maxlength="300"
+              ></textarea>
+            </div>
+            <div>
+              <input type="radio" value="rojo" name="ColoresRGB" />
+              <label>Rojo</label>
+              <input type="radio" value="verde" name="ColoresRGB" />
+              <label>Verde</label>
+              <input type="radio" value="azul" name="ColoresRGB" />
+              <label>Azul</label>
+            </div>
+            <!-- control + d en seleccion multiple para reescribir -->
+            <div>
+              <input type="checkbox" value="rojo" name="ColoresRGB" />
+              <label>Rojo</label>
+              <input type="checkbox" value="verde" name="ColoresRGB" />
+              <label>Verde</label>
+              <input type="checkbox" value="azul" name="ColoresRGB" />
+              <label>Azul</label>
+            </div>
+            <div>
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="centrarImagen">
+        <p>&copy; Todos los derechos reservados</p>
+      </div>
+      <!-- codigo ascii -->
+    </footer>
+  </body>
+</html>
+<!-- control + a para seleccionar toda la pagina -->
